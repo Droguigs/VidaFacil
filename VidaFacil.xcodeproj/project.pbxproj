@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6B13D4C224AD6E2007B2B46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D4B224AD6E2007B2B46 /* AppDelegate.swift */; };
+		B6B13D4E224AD6E2007B2B46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D4D224AD6E2007B2B46 /* ViewController.swift */; };
+		B6B13D51224AD6E2007B2B46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B13D4F224AD6E2007B2B46 /* Main.storyboard */; };
+		B6B13D53224AD6E4007B2B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B13D52224AD6E4007B2B46 /* Assets.xcassets */; };
+		B6B13D56224AD6E4007B2B46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B13D54224AD6E4007B2B46 /* LaunchScreen.storyboard */; };
+		B6B13D61224AD6E4007B2B46 /* VidaFacilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D60224AD6E4007B2B46 /* VidaFacilTests.swift */; };
+		B6B13D6C224AD6E4007B2B46 /* VidaFacilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D6B224AD6E4007B2B46 /* VidaFacilUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6B13D5D224AD6E4007B2B46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6B13D40224AD6E2007B2B46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6B13D47224AD6E2007B2B46;
+			remoteInfo = VidaFacil;
+		};
+		B6B13D68224AD6E4007B2B46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6B13D40224AD6E2007B2B46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6B13D47224AD6E2007B2B46;
+			remoteInfo = VidaFacil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B6B13D48224AD6E2007B2B46 /* VidaFacil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VidaFacil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B13D4B224AD6E2007B2B46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6B13D4D224AD6E2007B2B46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6B13D50224AD6E2007B2B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6B13D52224AD6E4007B2B46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6B13D55224AD6E4007B2B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6B13D57224AD6E4007B2B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6B13D5C224AD6E4007B2B46 /* VidaFacilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VidaFacilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B13D60224AD6E4007B2B46 /* VidaFacilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VidaFacilTests.swift; sourceTree = "<group>"; };
+		B6B13D62224AD6E4007B2B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6B13D67224AD6E4007B2B46 /* VidaFacilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VidaFacilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B13D6B224AD6E4007B2B46 /* VidaFacilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VidaFacilUITests.swift; sourceTree = "<group>"; };
+		B6B13D6D224AD6E4007B2B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6B13D45224AD6E2007B2B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6B13D59224AD6E4007B2B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6B13D64224AD6E4007B2B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6B13D3F224AD6E2007B2B46 = {
+			isa = PBXGroup;
+			children = (
+				B6B13D4A224AD6E2007B2B46 /* VidaFacil */,
+				B6B13D5F224AD6E4007B2B46 /* VidaFacilTests */,
+				B6B13D6A224AD6E4007B2B46 /* VidaFacilUITests */,
+				B6B13D49224AD6E2007B2B46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6B13D49224AD6E2007B2B46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6B13D48224AD6E2007B2B46 /* VidaFacil.app */,
+				B6B13D5C224AD6E4007B2B46 /* VidaFacilTests.xctest */,
+				B6B13D67224AD6E4007B2B46 /* VidaFacilUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6B13D4A224AD6E2007B2B46 /* VidaFacil */ = {
+			isa = PBXGroup;
+			children = (
+				B6B13D4B224AD6E2007B2B46 /* AppDelegate.swift */,
+				B6B13D4D224AD6E2007B2B46 /* ViewController.swift */,
+				B6B13D4F224AD6E2007B2B46 /* Main.storyboard */,
+				B6B13D52224AD6E4007B2B46 /* Assets.xcassets */,
+				B6B13D54224AD6E4007B2B46 /* LaunchScreen.storyboard */,
+				B6B13D57224AD6E4007B2B46 /* Info.plist */,
+			);
+			path = VidaFacil;
+			sourceTree = "<group>";
+		};
+		B6B13D5F224AD6E4007B2B46 /* VidaFacilTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6B13D60224AD6E4007B2B46 /* VidaFacilTests.swift */,
+				B6B13D62224AD6E4007B2B46 /* Info.plist */,
+			);
+			path = VidaFacilTests;
+			sourceTree = "<group>";
+		};
+		B6B13D6A224AD6E4007B2B46 /* VidaFacilUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6B13D6B224AD6E4007B2B46 /* VidaFacilUITests.swift */,
+				B6B13D6D224AD6E4007B2B46 /* Info.plist */,
+			);
+			path = VidaFacilUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6B13D47224AD6E2007B2B46 /* VidaFacil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6B13D70224AD6E4007B2B46 /* Build configuration list for PBXNativeTarget "VidaFacil" */;
+			buildPhases = (
+				B6B13D44224AD6E2007B2B46 /* Sources */,
+				B6B13D45224AD6E2007B2B46 /* Frameworks */,
+				B6B13D46224AD6E2007B2B46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VidaFacil;
+			productName = VidaFacil;
+			productReference = B6B13D48224AD6E2007B2B46 /* VidaFacil.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6B13D5B224AD6E4007B2B46 /* VidaFacilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6B13D73224AD6E4007B2B46 /* Build configuration list for PBXNativeTarget "VidaFacilTests" */;
+			buildPhases = (
+				B6B13D58224AD6E4007B2B46 /* Sources */,
+				B6B13D59224AD6E4007B2B46 /* Frameworks */,
+				B6B13D5A224AD6E4007B2B46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6B13D5E224AD6E4007B2B46 /* PBXTargetDependency */,
+			);
+			name = VidaFacilTests;
+			productName = VidaFacilTests;
+			productReference = B6B13D5C224AD6E4007B2B46 /* VidaFacilTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6B13D66224AD6E4007B2B46 /* VidaFacilUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6B13D76224AD6E4007B2B46 /* Build configuration list for PBXNativeTarget "VidaFacilUITests" */;
+			buildPhases = (
+				B6B13D63224AD6E4007B2B46 /* Sources */,
+				B6B13D64224AD6E4007B2B46 /* Frameworks */,
+				B6B13D65224AD6E4007B2B46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6B13D69224AD6E4007B2B46 /* PBXTargetDependency */,
+			);
+			name = VidaFacilUITests;
+			productName = VidaFacilUITests;
+			productReference = B6B13D67224AD6E4007B2B46 /* VidaFacilUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6B13D40224AD6E2007B2B46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Douglas Schiavi";
+				TargetAttributes = {
+					B6B13D47224AD6E2007B2B46 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					B6B13D5B224AD6E4007B2B46 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = B6B13D47224AD6E2007B2B46;
+					};
+					B6B13D66224AD6E4007B2B46 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = B6B13D47224AD6E2007B2B46;
+					};
+				};
+			};
+			buildConfigurationList = B6B13D43224AD6E2007B2B46 /* Build configuration list for PBXProject "VidaFacil" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6B13D3F224AD6E2007B2B46;
+			productRefGroup = B6B13D49224AD6E2007B2B46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6B13D47224AD6E2007B2B46 /* VidaFacil */,
+				B6B13D5B224AD6E4007B2B46 /* VidaFacilTests */,
+				B6B13D66224AD6E4007B2B46 /* VidaFacilUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6B13D46224AD6E2007B2B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B13D56224AD6E4007B2B46 /* LaunchScreen.storyboard in Resources */,
+				B6B13D53224AD6E4007B2B46 /* Assets.xcassets in Resources */,
+				B6B13D51224AD6E2007B2B46 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6B13D5A224AD6E4007B2B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6B13D65224AD6E4007B2B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6B13D44224AD6E2007B2B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B13D4E224AD6E2007B2B46 /* ViewController.swift in Sources */,
+				B6B13D4C224AD6E2007B2B46 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6B13D58224AD6E4007B2B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B13D61224AD6E4007B2B46 /* VidaFacilTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6B13D63224AD6E4007B2B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B13D6C224AD6E4007B2B46 /* VidaFacilUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6B13D5E224AD6E4007B2B46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6B13D47224AD6E2007B2B46 /* VidaFacil */;
+			targetProxy = B6B13D5D224AD6E4007B2B46 /* PBXContainerItemProxy */;
+		};
+		B6B13D69224AD6E4007B2B46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6B13D47224AD6E2007B2B46 /* VidaFacil */;
+			targetProxy = B6B13D68224AD6E4007B2B46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6B13D4F224AD6E2007B2B46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6B13D50224AD6E2007B2B46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6B13D54224AD6E4007B2B46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6B13D55224AD6E4007B2B46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6B13D6E224AD6E4007B2B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6B13D6F224AD6E4007B2B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6B13D71224AD6E4007B2B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 792V77RLPU;
+				INFOPLIST_FILE = VidaFacil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VidaFacil;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6B13D72224AD6E4007B2B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 792V77RLPU;
+				INFOPLIST_FILE = VidaFacil/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VidaFacil;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6B13D74224AD6E4007B2B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 792V77RLPU;
+				INFOPLIST_FILE = VidaFacilTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VidaFacilTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VidaFacil.app/VidaFacil";
+			};
+			name = Debug;
+		};
+		B6B13D75224AD6E4007B2B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 792V77RLPU;
+				INFOPLIST_FILE = VidaFacilTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VidaFacilTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VidaFacil.app/VidaFacil";
+			};
+			name = Release;
+		};
+		B6B13D77224AD6E4007B2B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 792V77RLPU;
+				INFOPLIST_FILE = VidaFacilUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VidaFacilUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VidaFacil;
+			};
+			name = Debug;
+		};
+		B6B13D78224AD6E4007B2B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 792V77RLPU;
+				INFOPLIST_FILE = VidaFacilUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VidaFacilUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VidaFacil;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6B13D43224AD6E2007B2B46 /* Build configuration list for PBXProject "VidaFacil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6B13D6E224AD6E4007B2B46 /* Debug */,
+				B6B13D6F224AD6E4007B2B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6B13D70224AD6E4007B2B46 /* Build configuration list for PBXNativeTarget "VidaFacil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6B13D71224AD6E4007B2B46 /* Debug */,
+				B6B13D72224AD6E4007B2B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6B13D73224AD6E4007B2B46 /* Build configuration list for PBXNativeTarget "VidaFacilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6B13D74224AD6E4007B2B46 /* Debug */,
+				B6B13D75224AD6E4007B2B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6B13D76224AD6E4007B2B46 /* Build configuration list for PBXNativeTarget "VidaFacilUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6B13D77224AD6E4007B2B46 /* Debug */,
+				B6B13D78224AD6E4007B2B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6B13D40224AD6E2007B2B46 /* Project object */;
+}

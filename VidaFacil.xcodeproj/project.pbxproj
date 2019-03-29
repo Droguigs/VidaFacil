@@ -14,6 +14,18 @@
 		B6B13D56224AD6E4007B2B46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B13D54224AD6E4007B2B46 /* LaunchScreen.storyboard */; };
 		B6B13D61224AD6E4007B2B46 /* VidaFacilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D60224AD6E4007B2B46 /* VidaFacilTests.swift */; };
 		B6B13D6C224AD6E4007B2B46 /* VidaFacilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D6B224AD6E4007B2B46 /* VidaFacilUITests.swift */; };
+		B6B13D80224DD98B007B2B46 /* TableListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D7E224DD98B007B2B46 /* TableListCollectionViewCell.swift */; };
+		B6B13D81224DD98B007B2B46 /* TableListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B13D7F224DD98B007B2B46 /* TableListCollectionViewCell.xib */; };
+		B6B13D84224DD99F007B2B46 /* LoginCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D82224DD99F007B2B46 /* LoginCollectionViewCell.swift */; };
+		B6B13D85224DD99F007B2B46 /* LoginCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B13D83224DD99F007B2B46 /* LoginCollectionViewCell.xib */; };
+		B6B13D88224DD9B1007B2B46 /* AboutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D86224DD9B1007B2B46 /* AboutCollectionViewCell.swift */; };
+		B6B13D89224DD9B1007B2B46 /* AboutCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B13D87224DD9B1007B2B46 /* AboutCollectionViewCell.xib */; };
+		B6B13D8F224DDADC007B2B46 /* UICollectionViewCell+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D8E224DDADC007B2B46 /* UICollectionViewCell+Identifiable.swift */; };
+		B6B13D91224DDAF3007B2B46 /* UITableViewCell+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D90224DDAF3007B2B46 /* UITableViewCell+Identifiable.swift */; };
+		B6B13D96224DDE6B007B2B46 /* ArtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D94224DDE6B007B2B46 /* ArtTableViewCell.swift */; };
+		B6B13D97224DDE6B007B2B46 /* ArtTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B13D95224DDE6B007B2B46 /* ArtTableViewCell.xib */; };
+		B6B13D9A224DDE96007B2B46 /* LocaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D98224DDE96007B2B46 /* LocaleTableViewCell.swift */; };
+		B6B13D9B224DDE96007B2B46 /* LocaleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B13D99224DDE96007B2B46 /* LocaleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,18 @@
 		B6B13D67224AD6E4007B2B46 /* VidaFacilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VidaFacilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B13D6B224AD6E4007B2B46 /* VidaFacilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VidaFacilUITests.swift; sourceTree = "<group>"; };
 		B6B13D6D224AD6E4007B2B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6B13D7E224DD98B007B2B46 /* TableListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListCollectionViewCell.swift; sourceTree = "<group>"; };
+		B6B13D7F224DD98B007B2B46 /* TableListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableListCollectionViewCell.xib; sourceTree = "<group>"; };
+		B6B13D82224DD99F007B2B46 /* LoginCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCollectionViewCell.swift; sourceTree = "<group>"; };
+		B6B13D83224DD99F007B2B46 /* LoginCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginCollectionViewCell.xib; sourceTree = "<group>"; };
+		B6B13D86224DD9B1007B2B46 /* AboutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCollectionViewCell.swift; sourceTree = "<group>"; };
+		B6B13D87224DD9B1007B2B46 /* AboutCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutCollectionViewCell.xib; sourceTree = "<group>"; };
+		B6B13D8E224DDADC007B2B46 /* UICollectionViewCell+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Identifiable.swift"; sourceTree = "<group>"; };
+		B6B13D90224DDAF3007B2B46 /* UITableViewCell+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Identifiable.swift"; sourceTree = "<group>"; };
+		B6B13D94224DDE6B007B2B46 /* ArtTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtTableViewCell.swift; sourceTree = "<group>"; };
+		B6B13D95224DDE6B007B2B46 /* ArtTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtTableViewCell.xib; sourceTree = "<group>"; };
+		B6B13D98224DDE96007B2B46 /* LocaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleTableViewCell.swift; sourceTree = "<group>"; };
+		B6B13D99224DDE96007B2B46 /* LocaleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocaleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +121,10 @@
 		B6B13D4A224AD6E2007B2B46 /* VidaFacil */ = {
 			isa = PBXGroup;
 			children = (
-				B6B13D4B224AD6E2007B2B46 /* AppDelegate.swift */,
-				B6B13D4D224AD6E2007B2B46 /* ViewController.swift */,
-				B6B13D4F224AD6E2007B2B46 /* Main.storyboard */,
+				B6B13D8B224DD9C9007B2B46 /* Model */,
+				B6B13D8A224DD9B7007B2B46 /* View */,
+				B6B13D8C224DD9D1007B2B46 /* Controller */,
 				B6B13D52224AD6E4007B2B46 /* Assets.xcassets */,
-				B6B13D54224AD6E4007B2B46 /* LaunchScreen.storyboard */,
 				B6B13D57224AD6E4007B2B46 /* Info.plist */,
 			);
 			path = VidaFacil;
@@ -123,6 +146,67 @@
 				B6B13D6D224AD6E4007B2B46 /* Info.plist */,
 			);
 			path = VidaFacilUITests;
+			sourceTree = "<group>";
+		};
+		B6B13D8A224DD9B7007B2B46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6B13D92224DDE3D007B2B46 /* TableCells */,
+				B6B13D87224DD9B1007B2B46 /* AboutCollectionViewCell.xib */,
+				B6B13D54224AD6E4007B2B46 /* LaunchScreen.storyboard */,
+				B6B13D83224DD99F007B2B46 /* LoginCollectionViewCell.xib */,
+				B6B13D4F224AD6E2007B2B46 /* Main.storyboard */,
+				B6B13D7F224DD98B007B2B46 /* TableListCollectionViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B6B13D8B224DD9C9007B2B46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6B13D8D224DD9FD007B2B46 /* Extensions */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B6B13D8C224DD9D1007B2B46 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6B13D93224DDE4E007B2B46 /* TableCells */,
+				B6B13D86224DD9B1007B2B46 /* AboutCollectionViewCell.swift */,
+				B6B13D4B224AD6E2007B2B46 /* AppDelegate.swift */,
+				B6B13D82224DD99F007B2B46 /* LoginCollectionViewCell.swift */,
+				B6B13D7E224DD98B007B2B46 /* TableListCollectionViewCell.swift */,
+				B6B13D4D224AD6E2007B2B46 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B6B13D8D224DD9FD007B2B46 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6B13D8E224DDADC007B2B46 /* UICollectionViewCell+Identifiable.swift */,
+				B6B13D90224DDAF3007B2B46 /* UITableViewCell+Identifiable.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B6B13D92224DDE3D007B2B46 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				B6B13D95224DDE6B007B2B46 /* ArtTableViewCell.xib */,
+				B6B13D99224DDE96007B2B46 /* LocaleTableViewCell.xib */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
+		B6B13D93224DDE4E007B2B46 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				B6B13D94224DDE6B007B2B46 /* ArtTableViewCell.swift */,
+				B6B13D98224DDE96007B2B46 /* LocaleTableViewCell.swift */,
+			);
+			name = TableCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +313,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B13D97224DDE6B007B2B46 /* ArtTableViewCell.xib in Resources */,
 				B6B13D56224AD6E4007B2B46 /* LaunchScreen.storyboard in Resources */,
 				B6B13D53224AD6E4007B2B46 /* Assets.xcassets in Resources */,
+				B6B13D9B224DDE96007B2B46 /* LocaleTableViewCell.xib in Resources */,
 				B6B13D51224AD6E2007B2B46 /* Main.storyboard in Resources */,
+				B6B13D81224DD98B007B2B46 /* TableListCollectionViewCell.xib in Resources */,
+				B6B13D89224DD9B1007B2B46 /* AboutCollectionViewCell.xib in Resources */,
+				B6B13D85224DD99F007B2B46 /* LoginCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +345,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B13D84224DD99F007B2B46 /* LoginCollectionViewCell.swift in Sources */,
+				B6B13D80224DD98B007B2B46 /* TableListCollectionViewCell.swift in Sources */,
 				B6B13D4E224AD6E2007B2B46 /* ViewController.swift in Sources */,
+				B6B13D96224DDE6B007B2B46 /* ArtTableViewCell.swift in Sources */,
+				B6B13D91224DDAF3007B2B46 /* UITableViewCell+Identifiable.swift in Sources */,
+				B6B13D88224DD9B1007B2B46 /* AboutCollectionViewCell.swift in Sources */,
+				B6B13D8F224DDADC007B2B46 /* UICollectionViewCell+Identifiable.swift in Sources */,
+				B6B13D9A224DDE96007B2B46 /* LocaleTableViewCell.swift in Sources */,
 				B6B13D4C224AD6E2007B2B46 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,6 +26,7 @@
 		B6B13D97224DDE6B007B2B46 /* ArtTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B13D95224DDE6B007B2B46 /* ArtTableViewCell.xib */; };
 		B6B13D9A224DDE96007B2B46 /* LocaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D98224DDE96007B2B46 /* LocaleTableViewCell.swift */; };
 		B6B13D9B224DDE96007B2B46 /* LocaleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B13D99224DDE96007B2B46 /* LocaleTableViewCell.xib */; };
+		B6B13D9D224DEE69007B2B46 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D9C224DEE69007B2B46 /* UIView+Border.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		B6B13D95224DDE6B007B2B46 /* ArtTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtTableViewCell.xib; sourceTree = "<group>"; };
 		B6B13D98224DDE96007B2B46 /* LocaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleTableViewCell.swift; sourceTree = "<group>"; };
 		B6B13D99224DDE96007B2B46 /* LocaleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocaleTableViewCell.xib; sourceTree = "<group>"; };
+		B6B13D9C224DEE69007B2B46 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			children = (
 				B6B13D8E224DDADC007B2B46 /* UICollectionViewCell+Identifiable.swift */,
 				B6B13D90224DDAF3007B2B46 /* UITableViewCell+Identifiable.swift */,
+				B6B13D9C224DEE69007B2B46 /* UIView+Border.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				B6B13D88224DD9B1007B2B46 /* AboutCollectionViewCell.swift in Sources */,
 				B6B13D8F224DDADC007B2B46 /* UICollectionViewCell+Identifiable.swift in Sources */,
 				B6B13D9A224DDE96007B2B46 /* LocaleTableViewCell.swift in Sources */,
+				B6B13D9D224DEE69007B2B46 /* UIView+Border.swift in Sources */,
 				B6B13D4C224AD6E2007B2B46 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

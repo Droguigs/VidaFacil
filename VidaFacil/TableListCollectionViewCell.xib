@@ -20,19 +20,22 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i9x-uV-7Z5">
-                        <rect key="frame" x="0.0" y="0.0" width="342" height="593"/>
+                        <rect key="frame" x="16" y="0.0" width="310" height="593"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tableView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="i9x-uV-7Z5" secondAttribute="trailing" id="3mD-ll-Is6"/>
+                <constraint firstAttribute="trailing" secondItem="i9x-uV-7Z5" secondAttribute="trailing" constant="16" id="3mD-ll-Is6"/>
                 <constraint firstAttribute="bottom" secondItem="i9x-uV-7Z5" secondAttribute="bottom" id="JLC-oU-caE"/>
                 <constraint firstItem="i9x-uV-7Z5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YgK-KC-5JK"/>
-                <constraint firstItem="i9x-uV-7Z5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ikl-mf-MVS"/>
+                <constraint firstItem="i9x-uV-7Z5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="ikl-mf-MVS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="342" height="593"/>
+            <connections>
+                <outlet property="tableView" destination="i9x-uV-7Z5" id="b4J-wi-HdF"/>
+            </connections>
             <point key="canvasLocation" x="130.43478260869566" y="124.88839285714285"/>
         </collectionViewCell>
     </objects>

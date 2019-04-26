@@ -13,6 +13,8 @@ class LoginCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+    var delegate: SegueDelegate!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -21,6 +23,7 @@ class LoginCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func login(_ sender: Any) {
+        delegate.login(name: "", password: "")
     }
     
     @IBAction func newAccount(_ sender: Any) {

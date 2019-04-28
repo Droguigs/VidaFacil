@@ -8,13 +8,15 @@
 
 import ObjectMapper
 
-struct Establishments {
-    var data: [Establishment]
+struct Establishments: RootApiModel {
+    var error: Error?
+    var data: [Establishment]?
 }
 
 extension Establishments: Mappable {
     init?(map: Map) { }
     mutating func mapping(map: Map) {
+        error = map.mapApiError()
         data <- map["data"]
     }
 }

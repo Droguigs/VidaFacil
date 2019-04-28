@@ -37,7 +37,6 @@ class ViewController: UIViewController {
     
     func loadNibs() {
         collectionView.register(AboutCollectionViewCell.nib, forCellWithReuseIdentifier: AboutCollectionViewCell.identifier)
-        collectionView.register(LoginCollectionViewCell.nib, forCellWithReuseIdentifier: LoginCollectionViewCell.identifier)
         collectionView.register(TableListCollectionViewCell.nib, forCellWithReuseIdentifier: TableListCollectionViewCell.identifier)
     }
     

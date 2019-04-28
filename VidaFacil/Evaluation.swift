@@ -11,7 +11,7 @@ import ObjectMapper
 struct Evaluation {
     var id: Int!
     var evaluation: Int!
-    var evaluationType: EvaluationType!
+    var evaluationType: EstablishmentType!
     var establishment: Establishment!
     var user: Bool!
     var text: Int!

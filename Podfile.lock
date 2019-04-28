@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.2)
+  - MBProgressHUD (1.1.0)
   - Moya (13.0.0):
     - Moya/Core (= 13.0.0)
   - Moya-ObjectMapper (2.3):
@@ -14,30 +15,43 @@ PODS:
     - Moya/Core
     - RxSwift (~> 4.0)
   - ObjectMapper (2.2.2)
+  - Realm (3.14.2):
+    - Realm/Headers (= 3.14.2)
+  - Realm/Headers (3.14.2)
+  - RealmSwift (3.14.2):
+    - Realm (= 3.14.2)
   - Result (4.1.0)
   - RxSwift (4.5.0)
 
 DEPENDENCIES:
+  - MBProgressHUD (~> 1.1)
   - Moya-ObjectMapper
   - Moya/RxSwift (= 13.0.0)
+  - RealmSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - MBProgressHUD
     - Moya
     - Moya-ObjectMapper
     - ObjectMapper
+    - Realm
+    - RealmSwift
     - Result
     - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   Moya: 161263550064ff8a4948e8ff63137fd72a876292
   Moya-ObjectMapper: b7f1f44f02b14c97d8a8efe9c6f8e6072252a58c
   ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
+  Realm: 179c6706e3a49dbfe112e572fd3c03d3169bea35
+  RealmSwift: 1797f272fb51c555b764fada32e82159a2c65247
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
 
-PODFILE CHECKSUM: 20f614e0bfcd101c4a5137684be8939d7bbf0b67
+PODFILE CHECKSUM: 7d06835e0f40cb5aa411ed75d1ad6a69fe3144d0
 
 COCOAPODS: 1.5.3

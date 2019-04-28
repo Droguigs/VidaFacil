@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -20,7 +20,14 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func login(_ sender: Any) {
-        self.performSegue(withIdentifier: "Login-Main", sender: nil)
+        ServicesManager.sharedInstance.api.login(user: emailField.text ?? "", password: passwordField.text ?? "") { (result, error) in
+            if let _error = error {
+                self.showError(_error)
+            } else if let _result = result {
+                print(_result)
+                self.performSegue(withIdentifier: "Login-Main", sender: nil)
+            }
+        }
     }
     
 }

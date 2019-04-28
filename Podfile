@@ -8,6 +8,8 @@ target 'VidaFacil' do
   # Pods for VidaFacil
   pod 'Moya/RxSwift', '13.0.0'
   pod 'Moya-ObjectMapper'
+  pod 'RealmSwift'
+  pod 'MBProgressHUD', '~> 1.1'
 
   target 'VidaFacilTests' do
     inherit! :search_paths

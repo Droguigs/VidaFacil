@@ -8,13 +8,15 @@
 
 import ObjectMapper
 
-struct DiscountTypes {
-    var data: [DiscountType]!
+struct DiscountTypes: RootApiModel {
+    var error: Error?
+    var data: [DiscountType]?
 }
 
 extension DiscountTypes: Mappable {
     init?(map: Map) { }
     mutating func mapping(map: Map) {
+        error = map.mapApiError()
         data <- map["data"]
     }
 }

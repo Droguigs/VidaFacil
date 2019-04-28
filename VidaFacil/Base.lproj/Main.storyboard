@@ -86,7 +86,6 @@
                         <outlet property="categoriesButton" destination="WqV-ui-joS" id="UHG-HY-f9k"/>
                         <outlet property="collectionView" destination="nZW-TP-A0W" id="Jap-3m-yvz"/>
                         <segue destination="rIc-dw-BqS" kind="show" identifier="Main-Locale" id="4d4-ub-mkH"/>
-                        <segue destination="umC-YL-kjD" kind="show" identifier="Main-Register" id="SkA-Vu-K0D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -104,12 +103,12 @@
                         <viewLayoutGuide key="safeArea" id="WHD-Ff-B7q"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" id="KD1-GX-Z8f"/>
+                        <segue destination="ugc-SN-UiA" kind="show" id="Rdj-g6-88Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLP-ej-6xT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="739"/>
+            <point key="canvasLocation" x="-17" y="739"/>
         </scene>
         <!--Discount Details View Controller-->
         <scene sceneID="Ex1-6u-OFG">
@@ -144,6 +143,19 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XCI-Cs-Asd" id="LSE-XW-3XO">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="89.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vfy-pc-DLj">
+                                                    <rect key="frame" x="16" y="12" width="65.666666666666671" height="65.666666666666671"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="vfy-pc-DLj" secondAttribute="height" id="69f-fS-FHF"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vfy-pc-DLj" firstAttribute="top" secondItem="LSE-XW-3XO" secondAttribute="top" constant="12" id="RAc-ex-STs"/>
+                                                <constraint firstItem="vfy-pc-DLj" firstAttribute="leading" secondItem="LSE-XW-3XO" secondAttribute="leading" constant="16" id="Uje-rc-pWY"/>
+                                                <constraint firstAttribute="bottom" secondItem="vfy-pc-DLj" secondAttribute="bottom" constant="12" id="pd7-7l-gfK"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -165,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w9N-eg-xqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2374" y="-15"/>
+            <point key="canvasLocation" x="2373.913043478261" y="-15.489130434782609"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="55k-QQ-ocF">
@@ -329,6 +341,9 @@
                                         <state key="normal" title="Criar Conta">
                                             <color key="titleColor" red="0.91372549020000005" green="0.93333333330000001" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="umC-YL-kjD" kind="show" id="dqN-Wg-iRe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zI-yo-aY7">
                                         <rect key="frame" x="117.66666666666666" y="162" width="146.99999999999997" height="29"/>
@@ -336,6 +351,9 @@
                                         <state key="normal" title="Entrar como convidado">
                                             <color key="titleColor" red="0.91372549020000005" green="0.93333333330000001" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="ugc-SN-UiA" kind="show" id="Pp5-QB-TlV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -435,6 +453,6 @@
         <image name="iconWhite" width="650" height="735"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MTa-lq-1or"/>
+        <segue reference="Pp5-QB-TlV"/>
     </inferredMetricsTieBreakers>
 </document>

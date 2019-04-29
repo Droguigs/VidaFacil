@@ -22,12 +22,16 @@ PODS:
     - Realm (= 3.14.2)
   - Result (4.1.0)
   - RxSwift (4.5.0)
+  - SDWebImage (5.0.2):
+    - SDWebImage/Core (= 5.0.2)
+  - SDWebImage/Core (5.0.2)
 
 DEPENDENCIES:
   - MBProgressHUD (~> 1.1)
   - Moya-ObjectMapper
   - Moya/RxSwift (= 13.0.0)
   - RealmSwift
+  - SDWebImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -40,6 +44,7 @@ SPEC REPOS:
     - RealmSwift
     - Result
     - RxSwift
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
@@ -51,7 +56,8 @@ SPEC CHECKSUMS:
   RealmSwift: 1797f272fb51c555b764fada32e82159a2c65247
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
 
-PODFILE CHECKSUM: 7d06835e0f40cb5aa411ed75d1ad6a69fe3144d0
+PODFILE CHECKSUM: a071e84d3f45a2abe4d91a85aa07290c35970f66
 
 COCOAPODS: 1.5.3

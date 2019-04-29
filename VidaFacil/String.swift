@@ -25,4 +25,11 @@ extension String {
         }
     }
     
+    func toUrl(_ urlString: String = "") -> URL? {
+        guard let url = URL(string: self) else {
+            return nil
+        }
+        return url
+    }
+    
 }

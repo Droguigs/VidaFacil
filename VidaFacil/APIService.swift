@@ -20,6 +20,21 @@ class ApiService: ApiServiceType {
         self.accessTokenCache = accessTokenCache
     }
     
+    func categories(categoryId: Int?, completion: @escaping (Categories?, Error?) -> ()) {
+        self.api.request(.categories(categoryId: categoryId)) { [weak self] result in
+            self?.parse(result, type: Categories.self, completion: completion, tokenExpired: { })
+        }
+    }
+    
+    func establishments(establishmentId: Int?, categoryId: Int?, latitude: String?, longitude: String?, completion: @escaping (Establishments?, Error?) -> ()) {
+        self.api.request(.establishments(establishmentId: establishmentId,
+                                         categoryId: categoryId,
+                                         latitude: latitude,
+                                         longitude: longitude)) { [weak self] result in
+            self?.parse(result, type: Establishments.self, completion: completion, tokenExpired: {})
+        }
+    }
+    
     func login(user: String, password: String, completion: @escaping (LoginResult?, Error?) -> ()) {
         self.api.request(.login(user: user, password: password)) { [weak self] result in
             self?.parse(result, type: LoginResult.self, completion: completion, tokenExpired: {})

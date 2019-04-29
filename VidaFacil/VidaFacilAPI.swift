@@ -141,7 +141,9 @@ extension VidaFacilAPI: TargetType, AccessTokenAuthorizable {
     
     var authorizationType: AuthorizationType {
         switch self {
-        case .login:
+        case .categories,
+             .establishments,
+             .login:
             return .none
         default:
             return .bearer

@@ -11,9 +11,9 @@ import ObjectMapper
 struct EstablishmentCategory {
     var id: Int!
     var name: String!
-    var icon: String!
-    var active: Bool!
-    var establishmentsCount: Int!
+    var icon: String?
+    var active: Bool?
+    var establishmentsCount: Int?
 }
 
 extension EstablishmentCategory: Mappable {
@@ -24,5 +24,11 @@ extension EstablishmentCategory: Mappable {
         icon                <- map["icon"]
         active              <- map["active"]
         establishmentsCount <- map["count_establisments"]
+    }
+}
+
+extension EstablishmentCategory: Equatable {
+    static func ==(lhs: EstablishmentCategory, rhs: EstablishmentCategory) -> Bool {
+        return lhs.id == rhs.id
     }
 }

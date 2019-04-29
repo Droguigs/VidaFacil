@@ -14,16 +14,20 @@ protocol SegueDelegate {
     func tutorial()
 }
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var categoriesButton: UIButton!
     @IBOutlet weak var aboutButton: UIButton!
     
+    var locales: [EstablishmentCategory] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadNibs()
+        
+        loadEstablishments()
         
         self.navigationItem.title = "Categorias"
         
@@ -38,6 +42,20 @@ class ViewController: UIViewController {
     func loadNibs() {
         collectionView.register(AboutCollectionViewCell.nib, forCellWithReuseIdentifier: AboutCollectionViewCell.identifier)
         collectionView.register(TableListCollectionViewCell.nib, forCellWithReuseIdentifier: TableListCollectionViewCell.identifier)
+    }
+    
+    private func loadEstablishments() {
+        self.showLoading()
+        ServicesManager.sharedInstance.api.categories(categoryId: nil) { (result, error) in
+            self.stopLoading()
+            if let _error = error {
+                self.showError(_error)
+            } else if let _result = result {
+                self.locales = _result.data ?? []
+                let cell = self.collectionView(self.collectionView, cellForItemAt: IndexPath(row: 0, section: 0)) as! TableListCollectionViewCell
+                cell.tableView.reloadData()
+            }
+        }
     }
     
     private func setButtonTextToBold(indexPath: IndexPath) {
@@ -69,6 +87,33 @@ class ViewController: UIViewController {
 
 }
 
+//MARK: TableView Delegate Methods
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch section {
+        case 0:
+            return 1
+        default:
+            return locales.count
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch indexPath.section {
+        case 0:
+            return tableView.dequeueReusableCell(withIdentifier: ArtTableViewCell.identifier, for: indexPath)
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: LocaleTableViewCell.identifier, for: indexPath) as! LocaleTableViewCell
+            cell.setCellDetails(image: locales[indexPath.row].icon ?? "icon", name: locales[indexPath.row].name, quantity: locales[indexPath.row].establishmentsCount ?? 0)
+            return cell
+        }
+    }
+}
+
 //MARK: Collection Delegate Methods
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -87,6 +132,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             
             _ = cell.contentView
             cell.setupCell()
+            cell.tableView.delegate = self
+            cell.tableView.dataSource = self
             
             return cell
         case 1:

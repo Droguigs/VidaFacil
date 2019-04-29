@@ -29,35 +29,6 @@ class TableListCollectionViewCell: UICollectionViewCell {
     
     func setupCell() {
         loadNibs()
-        tableView.delegate = self
-        tableView.dataSource = self
     }
     
-}
-
-//MARK: TableView Delegate Methods
-extension TableListCollectionViewCell: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
-        case 0:
-            return 1
-        default:
-            return locales.count
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.section {
-        case 0:
-            return tableView.dequeueReusableCell(withIdentifier: ArtTableViewCell.identifier, for: indexPath)
-        default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: LocaleTableViewCell.identifier, for: indexPath) as! LocaleTableViewCell
-            cell.setCellDetails(image: "icon", name: locales[indexPath.row].0, quantity: locales[indexPath.row].1)
-            return cell
-        }
-    }
 }

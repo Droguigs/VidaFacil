@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class LocaleTableViewCell: UITableViewCell {
 
@@ -24,7 +25,11 @@ class LocaleTableViewCell: UITableViewCell {
     }
     
     func setCellDetails(image: String, name: String, quantity: Int) {
-        myImage.image = UIImage(named: image)
+        if image == "Icon" {
+            myImage.image = UIImage(named: image)
+        } else {
+            myImage.sd_setImage(with: image.toUrl()!, placeholderImage: UIImage(named: "Icon"))
+        }
         localeLabel.text = name
         quantityLabel.text = "\(quantity)"
     }

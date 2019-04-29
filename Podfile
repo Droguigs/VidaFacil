@@ -10,6 +10,7 @@ target 'VidaFacil' do
   pod 'Moya-ObjectMapper'
   pod 'RealmSwift'
   pod 'MBProgressHUD', '~> 1.1'
+  pod 'SDWebImage'
 
   target 'VidaFacilTests' do
     inherit! :search_paths

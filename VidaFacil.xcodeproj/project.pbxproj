@@ -21,7 +21,7 @@
 		B604346B2275E50D00DB22F1 /* AccessTokenCacheType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B604346A2275E50D00DB22F1 /* AccessTokenCacheType.swift */; };
 		B604346F2275E6F800DB22F1 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B604346E2275E6F800DB22F1 /* LoginResult.swift */; };
 		B60434712275E7A700DB22F1 /* Map+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60434702275E7A700DB22F1 /* Map+Error.swift */; };
-		B60434732275E95100DB22F1 /* String+toApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60434722275E95100DB22F1 /* String+toApiError.swift */; };
+		B60434732275E95100DB22F1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60434722275E95100DB22F1 /* String.swift */; };
 		B60434752275EAB100DB22F1 /* TimeoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60434742275EAB100DB22F1 /* TimeoutManager.swift */; };
 		B60434782275EAF200DB22F1 /* UserCacheType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60434772275EAF200DB22F1 /* UserCacheType.swift */; };
 		B604347A2275EAFD00DB22F1 /* UserCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60434792275EAFD00DB22F1 /* UserCache.swift */; };
@@ -117,7 +117,7 @@
 		B604346A2275E50D00DB22F1 /* AccessTokenCacheType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenCacheType.swift; sourceTree = "<group>"; };
 		B604346E2275E6F800DB22F1 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
 		B60434702275E7A700DB22F1 /* Map+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map+Error.swift"; sourceTree = "<group>"; };
-		B60434722275E95100DB22F1 /* String+toApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+toApiError.swift"; sourceTree = "<group>"; };
+		B60434722275E95100DB22F1 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B60434742275EAB100DB22F1 /* TimeoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeoutManager.swift; sourceTree = "<group>"; };
 		B60434772275EAF200DB22F1 /* UserCacheType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCacheType.swift; sourceTree = "<group>"; };
 		B60434792275EAFD00DB22F1 /* UserCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCache.swift; sourceTree = "<group>"; };
@@ -484,7 +484,7 @@
 			children = (
 				B604348422763F0100DB22F1 /* AuthorizationType+Equatable.swift */,
 				B60434702275E7A700DB22F1 /* Map+Error.swift */,
-				B60434722275E95100DB22F1 /* String+toApiError.swift */,
+				B60434722275E95100DB22F1 /* String.swift */,
 				B6B13D8E224DDADC007B2B46 /* UICollectionViewCell+Identifiable.swift */,
 				B6A7450F22636EF0000610D6 /* UIColor + Hex.swift */,
 				B6B13D90224DDAF3007B2B46 /* UITableViewCell+Identifiable.swift */,
@@ -758,6 +758,7 @@
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -770,6 +771,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -836,7 +838,7 @@
 				B6B13D4C224AD6E2007B2B46 /* AppDelegate.swift in Sources */,
 				B6B13DA42252E021007B2B46 /* LocaleItensViewController.swift in Sources */,
 				B60434672275E4CA00DB22F1 /* UserDefaultsService.swift in Sources */,
-				B60434732275E95100DB22F1 /* String+toApiError.swift in Sources */,
+				B60434732275E95100DB22F1 /* String.swift in Sources */,
 				B604347E227630C400DB22F1 /* AccessTokenPlugin.swift in Sources */,
 				B69B309B22728EA100C26D91 /* Pivot.swift in Sources */,
 				B69B307122710F4F00C26D91 /* User.swift in Sources */,

@@ -116,6 +116,10 @@ extension VidaFacilAPI: TargetType, AccessTokenAuthorizable {
         case let .login(user, password):
             return .requestParameters(parameters: ["email" : user, "password" : password], encoding: JSONEncoding.default)
         
+        case .categories:
+            return .requestParameters(parameters: [:], encoding: JSONEncoding.default)
+//        case .establishments:
+//            return .requestParameters(parameters: [:], encoding: JSONEncoding.default)
 //            case let .addImage(groups,
 //            images,
 //            description):
@@ -151,7 +155,7 @@ extension VidaFacilAPI: TargetType, AccessTokenAuthorizable {
     }
     
     var headers: [String : String]? {
-        return nil
+        return ["Accept": "application/json"]
     }
     
     var parameterEncoding: ParameterEncoding {

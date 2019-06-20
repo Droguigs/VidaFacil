@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VidaFacil/APIService.swift"
-            timestampString = "578235541.1608551"
+            filePath = "VidaFacil/ViewController.swift"
+            timestampString = "582564627.550405"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "parse(_:type:completion:tokenExpired:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "loadEstablishments()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

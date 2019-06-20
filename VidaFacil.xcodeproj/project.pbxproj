@@ -76,6 +76,7 @@
 		B6B13DA02252DFFC007B2B46 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13D9E2252DFFC007B2B46 /* RegisterViewController.swift */; };
 		B6B13DA42252E021007B2B46 /* LocaleItensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13DA22252E021007B2B46 /* LocaleItensViewController.swift */; };
 		B6B13DA72252E33B007B2B46 /* DiscountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B13DA62252E33B007B2B46 /* DiscountDetailsViewController.swift */; };
+		B6DE223722BC44810055B3DE /* Sua-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B6DE223622BC44800055B3DE /* Sua-Medium.otf */; };
 		DB54E04B74C5425241DAE670 /* Pods_VidaFacil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4D7158B3F9E017A4292F9A /* Pods_VidaFacil.framework */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +179,7 @@
 		B6B13D9E2252DFFC007B2B46 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B6B13DA22252E021007B2B46 /* LocaleItensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleItensViewController.swift; sourceTree = "<group>"; };
 		B6B13DA62252E33B007B2B46 /* DiscountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountDetailsViewController.swift; sourceTree = "<group>"; };
+		B6DE223622BC44800055B3DE /* Sua-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sua-Medium.otf"; path = "../../../../Desktop/PACK TELAS/Sua-Medium.otf"; sourceTree = "<group>"; };
 		D8A06223E36694A5B0D7ABDC /* Pods_VidaFacilUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VidaFacilUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -415,6 +417,7 @@
 				B6B13D8A224DD9B7007B2B46 /* View */,
 				B6B13D8C224DD9D1007B2B46 /* Controller */,
 				B6B13D52224AD6E4007B2B46 /* Assets.xcassets */,
+				B6DE223622BC44800055B3DE /* Sua-Medium.otf */,
 				B6B13D57224AD6E4007B2B46 /* Info.plist */,
 			);
 			path = VidaFacil;
@@ -665,6 +668,7 @@
 				B6B13D56224AD6E4007B2B46 /* LaunchScreen.storyboard in Resources */,
 				B6B13D53224AD6E4007B2B46 /* Assets.xcassets in Resources */,
 				B6B13D9B224DDE96007B2B46 /* LocaleTableViewCell.xib in Resources */,
+				B6DE223722BC44810055B3DE /* Sua-Medium.otf in Resources */,
 				B6B13D51224AD6E2007B2B46 /* Main.storyboard in Resources */,
 				B6B13D81224DD98B007B2B46 /* TableListCollectionViewCell.xib in Resources */,
 				B6B13D89224DD9B1007B2B46 /* AboutCollectionViewCell.xib in Resources */,

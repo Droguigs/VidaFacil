@@ -11,6 +11,7 @@ target 'VidaFacil' do
   pod 'RealmSwift'
   pod 'MBProgressHUD', '~> 1.1'
   pod 'SDWebImage'
+  pod 'IQKeyboardManager'
 
   target 'VidaFacilTests' do
     inherit! :search_paths

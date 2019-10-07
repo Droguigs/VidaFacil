@@ -9,6 +9,7 @@ target 'VidaFacil-iOS' do
   pod 'Moya/RxSwift', '13.0.0'
   pod 'Moya-ObjectMapper'
   pod 'RealmSwift'
+  pod 'MMDrawerController', '~> 0.5.7'
   pod 'MBProgressHUD', '~> 1.1'
   pod 'SDWebImage'
   pod 'IQKeyboardManager'

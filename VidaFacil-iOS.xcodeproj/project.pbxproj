@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21432C22BF7C0B2DCF326376 /* Pods_VidaFacil_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A815AD5F1998833E7808BB3 /* Pods_VidaFacil_iOS.framework */; };
 		B637B12122FC602300AD1798 /* PreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637B12022FC602300AD1798 /* PreLoginViewController.swift */; };
 		B637B12422FC673500AD1798 /* SlideHorSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637B12322FC673500AD1798 /* SlideHorSegue.swift */; };
 		B637B12822FF07F600AD1798 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637B12722FF07F600AD1798 /* CategoriesCollectionViewCell.swift */; };
@@ -87,11 +86,11 @@
 		B6CF383922FB5A2F00AA0BA0 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF380622FB5A2E00AA0BA0 /* UIView+Border.swift */; };
 		B6CF383A22FB5A2F00AA0BA0 /* AlertButtonAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF380722FB5A2E00AA0BA0 /* AlertButtonAction.swift */; };
 		B6CF383C22FB5A2F00AA0BA0 /* TimeoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF380922FB5A2E00AA0BA0 /* TimeoutManager.swift */; };
+		DBE6E704934D27E30CAA7B8D /* Pods_VidaFacil_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEE82B838D7F4CCF8EF9F43 /* Pods_VidaFacil_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A815AD5F1998833E7808BB3 /* Pods_VidaFacil_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VidaFacil_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FBBAADD39E7DC1DD3549B44 /* Pods-VidaFacil-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VidaFacil-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VidaFacil-iOS/Pods-VidaFacil-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		26B3149DB73BDF68EC30B46E /* Pods-VidaFacil-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VidaFacil-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VidaFacil-iOS/Pods-VidaFacil-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B637B12022FC602300AD1798 /* PreLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoginViewController.swift; sourceTree = "<group>"; };
 		B637B12222FC618800AD1798 /* Sua-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sua-Medium.otf"; path = "../../../PACK TELAS/Sua-Medium.otf"; sourceTree = "<group>"; };
 		B637B12322FC673500AD1798 /* SlideHorSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideHorSegue.swift; sourceTree = "<group>"; };
@@ -174,7 +173,8 @@
 		B6CF380622FB5A2E00AA0BA0 /* UIView+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		B6CF380722FB5A2E00AA0BA0 /* AlertButtonAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertButtonAction.swift; sourceTree = "<group>"; };
 		B6CF380922FB5A2E00AA0BA0 /* TimeoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeoutManager.swift; sourceTree = "<group>"; };
-		DD2229982F1B7A860EE8CECB /* Pods-VidaFacil-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VidaFacil-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-VidaFacil-iOS/Pods-VidaFacil-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		CFEE82B838D7F4CCF8EF9F43 /* Pods_VidaFacil_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VidaFacil_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F092EBFA3DD2D38D63E3E5A5 /* Pods-VidaFacil-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VidaFacil-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-VidaFacil-iOS/Pods-VidaFacil-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,26 +182,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21432C22BF7C0B2DCF326376 /* Pods_VidaFacil_iOS.framework in Frameworks */,
+				DBE6E704934D27E30CAA7B8D /* Pods_VidaFacil_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D3363E95565F75C64E8D2AB /* Frameworks */ = {
+		43A5A516669E045B277A2E10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A815AD5F1998833E7808BB3 /* Pods_VidaFacil_iOS.framework */,
+				CFEE82B838D7F4CCF8EF9F43 /* Pods_VidaFacil_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1D587EAC311F03F06A97C50E /* Pods */ = {
+		721B1ADA89FAFE9D420B3EE7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2FBBAADD39E7DC1DD3549B44 /* Pods-VidaFacil-iOS.debug.xcconfig */,
-				DD2229982F1B7A860EE8CECB /* Pods-VidaFacil-iOS.release.xcconfig */,
+				26B3149DB73BDF68EC30B46E /* Pods-VidaFacil-iOS.debug.xcconfig */,
+				F092EBFA3DD2D38D63E3E5A5 /* Pods-VidaFacil-iOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -358,8 +358,8 @@
 			children = (
 				B6AC642922FA3C560038CA39 /* VidaFacil-iOS */,
 				B6AC642822FA3C560038CA39 /* Products */,
-				1D587EAC311F03F06A97C50E /* Pods */,
-				1D3363E95565F75C64E8D2AB /* Frameworks */,
+				721B1ADA89FAFE9D420B3EE7 /* Pods */,
+				43A5A516669E045B277A2E10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -423,11 +423,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6AC643922FA3C5D0038CA39 /* Build configuration list for PBXNativeTarget "VidaFacil-iOS" */;
 			buildPhases = (
-				837B51A8228ABB567F790A51 /* [CP] Check Pods Manifest.lock */,
+				AF91DD92BBA4E3EA9D75A5B1 /* [CP] Check Pods Manifest.lock */,
 				B6AC642322FA3C560038CA39 /* Sources */,
 				B6AC642422FA3C560038CA39 /* Frameworks */,
 				B6AC642522FA3C560038CA39 /* Resources */,
-				0634E9A7E813E1332DC1F2D1 /* [CP] Embed Pods Frameworks */,
+				CD5BE7DF2A150C8A36C077D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -488,45 +488,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0634E9A7E813E1332DC1F2D1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-VidaFacil-iOS/Pods-VidaFacil-iOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VidaFacil-iOS/Pods-VidaFacil-iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		837B51A8228ABB567F790A51 /* [CP] Check Pods Manifest.lock */ = {
+		AF91DD92BBA4E3EA9D75A5B1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -542,6 +504,46 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD5BE7DF2A150C8A36C077D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VidaFacil-iOS/Pods-VidaFacil-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VidaFacil-iOS/Pods-VidaFacil-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -767,7 +769,7 @@
 		};
 		B6AC643A22FA3C5D0038CA39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FBBAADD39E7DC1DD3549B44 /* Pods-VidaFacil-iOS.debug.xcconfig */;
+			baseConfigurationReference = 26B3149DB73BDF68EC30B46E /* Pods-VidaFacil-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -786,7 +788,7 @@
 		};
 		B6AC643B22FA3C5D0038CA39 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD2229982F1B7A860EE8CECB /* Pods-VidaFacil-iOS.release.xcconfig */;
+			baseConfigurationReference = F092EBFA3DD2D38D63E3E5A5 /* Pods-VidaFacil-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

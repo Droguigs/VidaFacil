@@ -1,20 +1,19 @@
 //
-//  EstablishmentTableViewCell.swift
+//  EstablishmentCategoryTableViewCell.swift
 //  VidaFacil-iOS
 //
-//  Created by Douglas Schiavi on 10/08/19.
+//  Created by Douglas Schiavi on 08/10/19.
 //  Copyright © 2019 Douglas Schiavi. All rights reserved.
 //
-
 import UIKit
 import SDWebImage
 
-class EstablishmentTableViewCell: UITableViewCell {
+class EstablishmentCategoryTableViewCell: UITableViewCell {
     
     @IBOutlet weak var establishmentImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var percentageLabel: UILabel!
+    @IBOutlet weak var averageGrade: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,11 +24,11 @@ class EstablishmentTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func setup(name title: String, description: String, percentage: String) {
-        establishmentImage.image = #imageLiteral(resourceName: "pig_icon")
+    func setup(image url: URL?, name title: String, description: String, average: String) {
+        establishmentImage.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "pig_icon"))
         titleLabel.text = title
         descriptionLabel.text = description
-        percentageLabel.text = percentage
+        averageGrade.text = average
     }
 
 }

@@ -7,41 +7,60 @@
 //
 
 import UIKit
+import SDWebImage
 
-class DetailsViewController: UIViewController {
+class DetailsViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var streetLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    
+    var establishment: Establishment?
+    var establishments: [Product] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupData()
         tableView.delegate = self
         tableView.dataSource = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupData() {
+        self.imageView.sd_setImage(with: establishment?.image.toUrl(), placeholderImage: #imageLiteral(resourceName: "pig_icon"))
+        self.titleLabel.text = establishment?.description ?? "Estabelecimento"
+        self.streetLabel.text = establishment?.address ?? ""
+        self.phoneLabel.text = establishment?.phone ?? ""
+        ServicesManager.sharedInstance.api.establishments(establishmentId: establishment?.id ?? 0) { (result, error) in
+            if let _error = error {
+                self.showError(_error)
+            } else if let _result = result {
+                self.establishments = _result.data?.products ?? []
+                self.tableView.reloadData()
+            }
+        }
     }
-    */
 
 }
 
 extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return establishments.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: EstablishmentTableViewCell.identifier, for: indexPath) as! EstablishmentTableViewCell
+        
+        cell.setup(name: establishments[indexPath.row].description, description: establishments[indexPath.row].discountType?.description ?? "", percentage: establishments[indexPath.row].discount + "%")
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: indexPath, animated: false)
+//        ServicesManager.sharedInstance.api
         performSegue(withIdentifier: "Details-QR", sender: self)
     }
     

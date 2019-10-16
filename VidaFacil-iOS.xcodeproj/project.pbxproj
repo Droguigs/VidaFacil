@@ -17,6 +17,7 @@
 		B637B1322303601A00AD1798 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637B1312303601A00AD1798 /* QRViewController.swift */; };
 		B637B1342303606800AD1798 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637B1332303606800AD1798 /* UserDetailsViewController.swift */; };
 		B637B1362303609500AD1798 /* EvaluationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637B1352303609500AD1798 /* EvaluationViewController.swift */; };
+		B65CC38B2355E939000A87BA /* QRResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65CC38A2355E939000A87BA /* QRResult.swift */; };
 		B6AC642B22FA3C560038CA39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC642A22FA3C560038CA39 /* AppDelegate.swift */; };
 		B6AC643022FA3C560038CA39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC642E22FA3C560038CA39 /* Main.storyboard */; };
 		B6AC643222FA3C5D0038CA39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC643122FA3C5D0038CA39 /* Assets.xcassets */; };
@@ -86,6 +87,9 @@
 		B6CF383922FB5A2F00AA0BA0 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF380622FB5A2E00AA0BA0 /* UIView+Border.swift */; };
 		B6CF383A22FB5A2F00AA0BA0 /* AlertButtonAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF380722FB5A2E00AA0BA0 /* AlertButtonAction.swift */; };
 		B6CF383C22FB5A2F00AA0BA0 /* TimeoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF380922FB5A2E00AA0BA0 /* TimeoutManager.swift */; };
+		B6FB95F6234B5AE30005C6A2 /* MMDrawerMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB95F5234B5AE30005C6A2 /* MMDrawerMenuViewController.swift */; };
+		B6FEE032234D7E1400BDF4F5 /* EstablishmentCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FEE031234D7E1400BDF4F5 /* EstablishmentCategories.swift */; };
+		B6FEE034234D819E00BDF4F5 /* EstablishmentCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FEE033234D819E00BDF4F5 /* EstablishmentCategoryTableViewCell.swift */; };
 		DBE6E704934D27E30CAA7B8D /* Pods_VidaFacil_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEE82B838D7F4CCF8EF9F43 /* Pods_VidaFacil_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +106,7 @@
 		B637B1312303601A00AD1798 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		B637B1332303606800AD1798 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		B637B1352303609500AD1798 /* EvaluationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationViewController.swift; sourceTree = "<group>"; };
+		B65CC38A2355E939000A87BA /* QRResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRResult.swift; sourceTree = "<group>"; };
 		B6AC642722FA3C560038CA39 /* VidaFacil-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VidaFacil-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AC642A22FA3C560038CA39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6AC642F22FA3C560038CA39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -173,6 +178,9 @@
 		B6CF380622FB5A2E00AA0BA0 /* UIView+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		B6CF380722FB5A2E00AA0BA0 /* AlertButtonAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertButtonAction.swift; sourceTree = "<group>"; };
 		B6CF380922FB5A2E00AA0BA0 /* TimeoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeoutManager.swift; sourceTree = "<group>"; };
+		B6FB95F5234B5AE30005C6A2 /* MMDrawerMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMDrawerMenuViewController.swift; sourceTree = "<group>"; };
+		B6FEE031234D7E1400BDF4F5 /* EstablishmentCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentCategories.swift; sourceTree = "<group>"; };
+		B6FEE033234D819E00BDF4F5 /* EstablishmentCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstablishmentCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		CFEE82B838D7F4CCF8EF9F43 /* Pods_VidaFacil_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VidaFacil_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F092EBFA3DD2D38D63E3E5A5 /* Pods-VidaFacil-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VidaFacil-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-VidaFacil-iOS/Pods-VidaFacil-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,14 +238,15 @@
 				B637B12522FF06E700AD1798 /* Collection Cells */,
 				B637B12622FF06F900AD1798 /* Table Cells */,
 				B6CF37F022FB5A2900AA0BA0 /* CameraViewController.swift */,
-				B6CF380122FB5A2D00AA0BA0 /* LoginViewController.swift */,
-				B637B12022FC602300AD1798 /* PreLoginViewController.swift */,
-				B637B12B2300732B00AD1798 /* EstablishmentsMainViewController.swift */,
 				B637B12F23035FE300AD1798 /* DetailsViewController.swift */,
-				B637B1312303601A00AD1798 /* QRViewController.swift */,
-				B637B1332303606800AD1798 /* UserDetailsViewController.swift */,
+				B637B12B2300732B00AD1798 /* EstablishmentsMainViewController.swift */,
 				B637B1352303609500AD1798 /* EvaluationViewController.swift */,
+				B6CF380122FB5A2D00AA0BA0 /* LoginViewController.swift */,
+				B6FB95F5234B5AE30005C6A2 /* MMDrawerMenuViewController.swift */,
+				B637B12022FC602300AD1798 /* PreLoginViewController.swift */,
+				B637B1312303601A00AD1798 /* QRViewController.swift */,
 				B6B200DF232E69A900F29C9B /* SignUpViewController.swift */,
+				B637B1332303606800AD1798 /* UserDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -253,6 +262,7 @@
 				B6CF37E622FB5A2800AA0BA0 /* DiscountTypes.swift */,
 				B6CF37EF22FB5A2900AA0BA0 /* EstablishmentCategory.swift */,
 				B6CF37D922FB5A2600AA0BA0 /* Establishment.swift */,
+				B6FEE031234D7E1400BDF4F5 /* EstablishmentCategories.swift */,
 				B6CF37EA22FB5A2800AA0BA0 /* Establishments.swift */,
 				B6CF37F722FB5A2B00AA0BA0 /* EstablishmentType.swift */,
 				B6CF37F422FB5A2A00AA0BA0 /* Evaluation.swift */,
@@ -269,6 +279,7 @@
 				B6CF37F522FB5A2B00AA0BA0 /* String.swift */,
 				B6CF37D722FB5A2600AA0BA0 /* User.swift */,
 				B6CF37E122FB5A2700AA0BA0 /* Users.swift */,
+				B65CC38A2355E939000A87BA /* QRResult.swift */,
 			);
 			path = Mappable;
 			sourceTree = "<group>";
@@ -349,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				B637B12922FF149D00AD1798 /* EstablishmentTableViewCell.swift */,
+				B6FEE033234D819E00BDF4F5 /* EstablishmentCategoryTableViewCell.swift */,
 			);
 			path = "Table Cells";
 			sourceTree = "<group>";
@@ -564,6 +576,8 @@
 				B6CF380E22FB5A2F00AA0BA0 /* UITableViewCell+Identifiable.swift in Sources */,
 				B6CF381C22FB5A2F00AA0BA0 /* UserCacheType.swift in Sources */,
 				B6CF382222FB5A2F00AA0BA0 /* EstablishmentCategory.swift in Sources */,
+				B65CC38B2355E939000A87BA /* QRResult.swift in Sources */,
+				B6FEE032234D7E1400BDF4F5 /* EstablishmentCategories.swift in Sources */,
 				B6CF381922FB5A2F00AA0BA0 /* DiscountTypes.swift in Sources */,
 				B6B200C72325F79100F29C9B /* SettingsCacheType.swift in Sources */,
 				B6CF383222FB5A2F00AA0BA0 /* States.swift in Sources */,
@@ -611,6 +625,7 @@
 				B6CF383422FB5A2F00AA0BA0 /* LoginViewController.swift in Sources */,
 				B6CF383622FB5A2F00AA0BA0 /* Evaluations.swift in Sources */,
 				B6CF381122FB5A2F00AA0BA0 /* State.swift in Sources */,
+				B6FEE034234D819E00BDF4F5 /* EstablishmentCategoryTableViewCell.swift in Sources */,
 				B6CF381822FB5A2F00AA0BA0 /* APIServiceType.swift in Sources */,
 				B6CF380D22FB5A2F00AA0BA0 /* Categories.swift in Sources */,
 				B637B1322303601A00AD1798 /* QRViewController.swift in Sources */,
@@ -623,6 +638,7 @@
 				B6CF383722FB5A2F00AA0BA0 /* UICollectionViewCell+Identifiable.swift in Sources */,
 				B6CF382822FB5A2F00AA0BA0 /* String.swift in Sources */,
 				B6CF383522FB5A2F00AA0BA0 /* LoginResult.swift in Sources */,
+				B6FB95F6234B5AE30005C6A2 /* MMDrawerMenuViewController.swift in Sources */,
 				B6CF381D22FB5A2F00AA0BA0 /* Establishments.swift in Sources */,
 				B6CF382B22FB5A2F00AA0BA0 /* VidaFacilAPI.swift in Sources */,
 				B6B200C52325F75B00F29C9B /* GeneralCache.swift in Sources */,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MMDrawerController
 
 class EstablishmentsMainViewController: BaseViewController {
 
@@ -17,11 +18,21 @@ class EstablishmentsMainViewController: BaseViewController {
     var collectionArray: [(Int, URL?)] = []
     var tableArray: [Establishment] = []
     
+    var establishment = Establishment()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupMenu()
         setupDelegates()
         setupCollection()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    
+    func setupMenu() {
+        
     }
     
     func setupDelegates() {
@@ -51,7 +62,7 @@ class EstablishmentsMainViewController: BaseViewController {
     
     func setupTable(id categoryId: Int) {
         self.showLoading()
-        ServicesManager.sharedInstance.api.establishments(establishmentId: nil, categoryId: categoryId, latitude: "-31.7152834", longitude: "-52.3567087") { (result, error) in
+        ServicesManager.sharedInstance.api.establishmentCategory(categoryId: categoryId, latitude: "-31.7152834", longitude: "-52.3567087") { (result, error) in
             self.stopLoading()
             if let data = result?.data {
                 self.tableArray = data
@@ -64,6 +75,19 @@ class EstablishmentsMainViewController: BaseViewController {
         
     }
     
+    @IBAction func menuButtonClick(_ sender: Any) {
+        
+    }
+    
+    @IBAction func searchButtonClick(_ sender: Any) {
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Create a new variable to store the instance of PlayerTableViewController
+        let destinationVC = segue.destination as! DetailsViewController
+        destinationVC.establishment = self.establishment
+    }
     
 }
 
@@ -74,16 +98,18 @@ extension EstablishmentsMainViewController: UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EstablishmentsMainViewTableCell", for: indexPath) as! EstablishmentTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EstablishmentCategoryTableViewCell", for: indexPath) as! EstablishmentCategoryTableViewCell
         if let array = tableArray[indexPath.row].average {
-            cell.setup(name: tableArray[indexPath.row].image?.toUrl(), name: tableArray[indexPath.row].description, description: "", average: String(array.average))
+            cell.setup(image: tableArray[indexPath.row].image?.toUrl(), name: tableArray[indexPath.row].description, description: "", average: String(array.average))
         } else {
-            cell.setup(name: tableArray[indexPath.row].image?.toUrl(), name: tableArray[indexPath.row].description, description: "", average: "-")
+            cell.setup(image: tableArray[indexPath.row].image?.toUrl(), name: tableArray[indexPath.row].description, description: "", average: "-")
         }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.tableView.deselectRow(at: indexPath, animated: false)
+        self.establishment = tableArray[indexPath.row]
         self.performSegue(withIdentifier: "Menu-Details", sender: self)
     }
     

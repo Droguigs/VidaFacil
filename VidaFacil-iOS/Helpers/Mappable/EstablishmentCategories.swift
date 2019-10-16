@@ -1,19 +1,19 @@
 //
-//  Establishments.swift
-//  VidaFacil
+//  EstablishmentCategories.swift
+//  VidaFacil-iOS
 //
-//  Created by Douglas Schiavi on 24/04/19.
+//  Created by Douglas Schiavi on 08/10/19.
 //  Copyright © 2019 Douglas Schiavi. All rights reserved.
 //
 
 import ObjectMapper
 
-struct Establishments: RootApiModel {
+struct EstablishmentCategories: RootApiModel {
     var error: Error?
-    var data: Establishment?
+    var data: [Establishment]?
 }
 
-extension Establishments: Mappable {
+extension EstablishmentCategories: Mappable {
     init?(map: Map) { }
     mutating func mapping(map: Map) {
         error = map.mapApiError()

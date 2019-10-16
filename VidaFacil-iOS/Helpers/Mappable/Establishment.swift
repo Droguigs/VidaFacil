@@ -24,7 +24,8 @@ struct Establishment {
     var qrCode: String!
     var active: Bool!
     var productsCount: Int!
-    var evaluations: Any!
+    var products: [Product]!
+    var evaluations: [Any]!
     var average: StarAverage!
 }
 
@@ -33,22 +34,23 @@ extension Establishment: Mappable {
     init?(map: Map) { }
     
     mutating func mapping(map: Map) {
-        id              <- map["id"]
-        description     <- map["description"]
-        category        <- map["category"]
-        cep             <- map["cep"]
-        state           <- map["state"]
-        city            <- map["city"]
-        neighborhood    <- map["neighborhood"]
-        address         <- map["address"]
-        phone           <- map["phone"]
-        latitude        <- map["latitude"]
-        longitude       <- map["longitude"]
-        image           <- map["image"]
-        qrCode          <- map["qr_code"]
-        active          <- map["active"]
-        productsCount   <- map["count_products"]
-        evaluations     <- map["evaluations"]
-        average         <- map["stars"]
+        id              <- map ["id"]
+        description     <- map ["description"]
+        category        <- map ["category"]
+        cep             <- map ["cep"]
+        state           <- map ["state"]
+        city            <- map ["city"]
+        neighborhood    <- map ["neighborhood"]
+        address         <- map ["address"]
+        phone           <- map ["phone"]
+        latitude        <- map ["latitude"]
+        longitude       <- map ["longitude"]
+        image           <- map ["image"]
+        qrCode          <- map ["qr_code"]
+        active          <- map ["active"]
+        productsCount   <- map ["count_products"]
+        products        <- map ["products"]
+        evaluations     <- map ["evaluations"]
+        average         <- map ["stars"]
     }
 }

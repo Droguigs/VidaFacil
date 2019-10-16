@@ -56,12 +56,17 @@ class ApiService: ApiServiceType {
         }
     }
     
-    func establishments(establishmentId: Int?, categoryId: Int?, latitude: String?, longitude: String?, completion: @escaping (Establishments?, Error?) -> ()) {
-        self.api.request(.establishments(establishmentId: establishmentId,
-                                         categoryId: categoryId,
+    func establishments(establishmentId: Int?, completion: @escaping (Establishments?, Error?) -> ()) {
+        self.api.request(.establishments(establishmentId: establishmentId)) { [weak self] result in
+            self?.parse(result, type: Establishments.self, completion: completion, tokenExpired: {})
+        }
+    }
+    
+    func establishmentCategory(categoryId: Int?, latitude: String?, longitude: String?, completion: @escaping (EstablishmentCategories?, Error?) -> ()) {
+        self.api.request(.establishmentsCategory(categoryId: categoryId,
                                          latitude: latitude,
                                          longitude: longitude)) { [weak self] result in
-            self?.parse(result, type: Establishments.self, completion: completion, tokenExpired: {})
+            self?.parse(result, type: EstablishmentCategories.self, completion: completion, tokenExpired: {})
         }
     }
     
@@ -104,6 +109,18 @@ class ApiService: ApiServiceType {
                     completion(result, nil)
                 }
             }, tokenExpired: {})
+        }
+    }
+    
+    func qr(qrCode: Int!, productId: String!, completion: @escaping (QRResult?, Error?) -> ()) {
+        self.api.request(.qr(qrCode: qrCode, productId: productId)) { [weak self] result in
+            self?.parse(result, type: QRResult.self, completion: { (result, error) in
+                if let _error = error {
+                    completion(nil, _error)
+                } else {
+                    completion(result, nil)
+                }
+            }, tokenExpired: { })
         }
     }
     

@@ -9,10 +9,12 @@
 import UIKit
 import AVFoundation
 
-class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+class QRViewController: BaseViewController, AVCaptureMetadataOutputObjectsDelegate {
 
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
+    var productId: Int = 0
+    var qrResult: QRResult?
     
     @IBOutlet weak var QRView: UIView!
     @IBOutlet weak var codeText: UITextField!
@@ -100,7 +102,14 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
     }
     */
     @IBAction func useCode(_ sender: Any) {
-        performSegue(withIdentifier: "QR-UserDetails", sender: self)
+        ServicesManager.sharedInstance.api.qr(qrCode: codeText.text, productId: self.productId) { (result, error) in
+            if let _error = error {
+                self.showError(_error)
+            } else if let _result = result {
+                self.qrResult = _result
+                self.performSegue(withIdentifier: "QR-UserDetails", sender: self)
+            }
+        }
     }
     
     @IBAction func scanQR(_ sender: Any) {

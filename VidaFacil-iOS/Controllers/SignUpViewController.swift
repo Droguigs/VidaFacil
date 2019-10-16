@@ -74,6 +74,7 @@ class SignUpViewController: BaseViewController {
         default:
             refreshData(2)
             if signUpData.checkNil() {
+//                ServicesManager.sharedInstance.api
                 self.performSegue(withIdentifier: "SignUp-Main", sender: self)
             } else {
                 self.showMessage("Favor preencher todos os campos.")

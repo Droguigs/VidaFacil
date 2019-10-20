@@ -27,8 +27,11 @@ class EstablishmentCategoryTableViewCell: UITableViewCell {
     func setup(image url: URL?, name title: String, description: String, average: String) {
         establishmentImage.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "pig_icon"))
         titleLabel.text = title
+        titleLabel.textColor = .black
         descriptionLabel.text = description
+        descriptionLabel.textColor = .black
         averageGrade.text = average
+        averageGrade.textColor = .black
     }
 
 }

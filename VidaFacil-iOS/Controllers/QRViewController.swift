@@ -23,6 +23,12 @@ class QRViewController: BaseViewController, AVCaptureMetadataOutputObjectsDelega
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.codeText.textColor = .black
+        self.codeText.attributedPlaceholder = NSAttributedString(string: "Código",
+        attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+    }
+    
     func setupCamera() {
         
         captureSession = AVCaptureSession()

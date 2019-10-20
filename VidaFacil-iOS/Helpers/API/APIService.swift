@@ -112,9 +112,21 @@ class ApiService: ApiServiceType {
         }
     }
     
-    func qr(qrCode: Int!, productId: String!, completion: @escaping (QRResult?, Error?) -> ()) {
+    func qr(qrCode: String!, productId: Int!, completion: @escaping (QRResult?, Error?) -> ()) {
         self.api.request(.qr(qrCode: qrCode, productId: productId)) { [weak self] result in
             self?.parse(result, type: QRResult.self, completion: { (result, error) in
+                if let _error = error {
+                    completion(nil, _error)
+                } else {
+                    completion(result, nil)
+                }
+            }, tokenExpired: { })
+        }
+    }
+    
+    func signUp(data: SignUpData!, completion: @escaping (SignInResult?, Error?) -> ()) {
+        self.api.request(.signUp(data: data)) { [weak self] result in
+            self?.parse(result, type: SignInResult.self, completion: { (result, error) in
                 if let _error = error {
                     completion(nil, _error)
                 } else {

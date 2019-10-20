@@ -22,6 +22,7 @@ protocol ApiServiceType {
     func plans(planId: Int?, completion: @escaping Completion<Plans>)
     func products(productId: Int?, completion: @escaping Completion<Products>)
     func qr(qrCode: String!, productId: Int!, completion: @escaping Completion<QRResult>)
+    func signUp(data: SignUpData!, completion: @escaping Completion<SignInResult>)
     func states(stateId: Int?, completion: @escaping Completion<States>)
     func users(userId: Int?, completion: @escaping Completion<Users>)
     

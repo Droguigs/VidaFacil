@@ -21,20 +21,35 @@ class SignUpViewController: BaseViewController {
     @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
     
     var signUpData = SignUpData()
-    
     var indexPath = 0
+    var addressData: [State] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadNibs()
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        loadData()
     }
     
     func loadNibs() {
         collectionView.register(SignUpLocationCollectionViewCell.nib, forCellWithReuseIdentifier: SignUpLocationCollectionViewCell.identifier)
         collectionView.register(SignUpPaymentCollectionViewCell.nib, forCellWithReuseIdentifier: SignUpPaymentCollectionViewCell.identifier)
         collectionView.register(SignUpPersonalCollectionViewCell.nib, forCellWithReuseIdentifier: SignUpPersonalCollectionViewCell.identifier)
+    }
+    
+    func loadData() {
+        self.showLoading()
+        ServicesManager.sharedInstance.api.states(stateId: nil) { (result, error) in
+            self.stopLoading()
+            if let _error = error {
+                self.showError(_error)
+            } else if let _result = result {
+                self.addressData = _result.data ?? []
+                self.collectionView.reloadData()
+            }
+        }
     }
     
     @IBAction func segmentControlDidChange(_ sender: UISegmentedControl) {
@@ -74,8 +89,13 @@ class SignUpViewController: BaseViewController {
         default:
             refreshData(2)
             if signUpData.checkNil() {
-//                ServicesManager.sharedInstance.api
-                self.performSegue(withIdentifier: "SignUp-Main", sender: self)
+                ServicesManager.sharedInstance.api.signUp(data: self.signUpData) { (result, error) in
+                    if let _error = error {
+                        self.showError(_error)
+                    } else if let _result = result {
+                        self.performSegue(withIdentifier: "SignUp-Main", sender: self)
+                    }
+                }
             } else {
                 self.showMessage("Favor preencher todos os campos.")
             }
@@ -114,8 +134,8 @@ extension SignUpViewController: UICollectionViewDelegate, UICollectionViewDataSo
             return cell
             
         case 1:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SignUpLocationCollectionViewCell.identifier, for: indexPath)
-            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SignUpLocationCollectionViewCell.identifier, for: indexPath) as! SignUpLocationCollectionViewCell
+            cell.picker.delegate = self
             return cell
             
         default:
@@ -138,6 +158,26 @@ extension SignUpViewController: SignUpDelegate {
     
 }
 
+extension SignUpViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return addressData.count
+    }
+    
+    func pickerView( _ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+     return addressData[row].description
+    }
+
+    func pickerView( _ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let cell = collectionView.cellForItem(at: IndexPath(item: 1, section: 0)) as! SignUpLocationCollectionViewCell
+        cell.stateText.text = addressData[row].description
+    }
+}
+
 class SignUpData {
     
     var name: String?
@@ -158,7 +198,7 @@ class SignUpData {
     var expirationYear: Int?
     var cvv: Int?
     var brand: String?
-    var photo: Data?
+    var photo: Data? = UIImage(named: "pig_icon")?.jpegData(compressionQuality: 0.4)
     
     func checkNil() -> Bool {
         if name != nil,

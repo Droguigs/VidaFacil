@@ -18,6 +18,7 @@
 		B637B1342303606800AD1798 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637B1332303606800AD1798 /* UserDetailsViewController.swift */; };
 		B637B1362303609500AD1798 /* EvaluationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B637B1352303609500AD1798 /* EvaluationViewController.swift */; };
 		B65CC38B2355E939000A87BA /* QRResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65CC38A2355E939000A87BA /* QRResult.swift */; };
+		B65CC38D23575E51000A87BA /* SignInResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65CC38C23575E51000A87BA /* SignInResult.swift */; };
 		B6AC642B22FA3C560038CA39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC642A22FA3C560038CA39 /* AppDelegate.swift */; };
 		B6AC643022FA3C560038CA39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC642E22FA3C560038CA39 /* Main.storyboard */; };
 		B6AC643222FA3C5D0038CA39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC643122FA3C5D0038CA39 /* Assets.xcassets */; };
@@ -107,6 +108,7 @@
 		B637B1332303606800AD1798 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		B637B1352303609500AD1798 /* EvaluationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationViewController.swift; sourceTree = "<group>"; };
 		B65CC38A2355E939000A87BA /* QRResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRResult.swift; sourceTree = "<group>"; };
+		B65CC38C23575E51000A87BA /* SignInResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResult.swift; sourceTree = "<group>"; };
 		B6AC642722FA3C560038CA39 /* VidaFacil-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VidaFacil-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AC642A22FA3C560038CA39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6AC642F22FA3C560038CA39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -273,13 +275,14 @@
 				B6CF37DD22FB5A2700AA0BA0 /* Plans.swift */,
 				B6CF37F322FB5A2A00AA0BA0 /* Product.swift */,
 				B6CF37EB22FB5A2900AA0BA0 /* Products.swift */,
+				B65CC38A2355E939000A87BA /* QRResult.swift */,
+				B65CC38C23575E51000A87BA /* SignInResult.swift */,
 				B6B200CC2326C28B00F29C9B /* StarAverage.swift */,
 				B6CF37DE22FB5A2700AA0BA0 /* State.swift */,
 				B6CF37FF22FB5A2D00AA0BA0 /* States.swift */,
 				B6CF37F522FB5A2B00AA0BA0 /* String.swift */,
 				B6CF37D722FB5A2600AA0BA0 /* User.swift */,
 				B6CF37E122FB5A2700AA0BA0 /* Users.swift */,
-				B65CC38A2355E939000A87BA /* QRResult.swift */,
 			);
 			path = Mappable;
 			sourceTree = "<group>";
@@ -617,6 +620,7 @@
 				B6CF382F22FB5A2F00AA0BA0 /* UserCache.swift in Sources */,
 				B637B12822FF07F600AD1798 /* CategoriesCollectionViewCell.swift in Sources */,
 				B6CF382A22FB5A2F00AA0BA0 /* EstablishmentType.swift in Sources */,
+				B65CC38D23575E51000A87BA /* SignInResult.swift in Sources */,
 				B637B12A22FF149D00AD1798 /* EstablishmentTableViewCell.swift in Sources */,
 				B6B200C32325F74E00F29C9B /* GeneralCacheType.swift in Sources */,
 				B6CF382522FB5A2F00AA0BA0 /* UserDefaultsServiceType.swift in Sources */,
@@ -791,6 +795,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 792V77RLPU;
 				INFOPLIST_FILE = "VidaFacil-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -810,6 +815,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 792V77RLPU;
 				INFOPLIST_FILE = "VidaFacil-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

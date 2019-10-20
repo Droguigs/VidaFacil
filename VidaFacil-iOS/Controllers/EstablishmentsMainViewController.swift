@@ -11,6 +11,7 @@ import MMDrawerController
 
 class EstablishmentsMainViewController: BaseViewController {
 
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentControl: UISegmentedControl!
@@ -22,13 +23,18 @@ class EstablishmentsMainViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setupMenu()
         setupDelegates()
         setupCollection()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        self.tableView.backgroundColor = .white
+        self.label.textColor = .black
+        self.segmentControl.selectedSegmentTintColor = UIColor(hex: "588829")
+        self.segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .selected)
+        self.segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .normal)
     }
     
     func setupMenu() {
@@ -99,6 +105,8 @@ extension EstablishmentsMainViewController: UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EstablishmentCategoryTableViewCell", for: indexPath) as! EstablishmentCategoryTableViewCell
+        cell.backgroundColor = .white
+        
         if let array = tableArray[indexPath.row].average {
             cell.setup(image: tableArray[indexPath.row].image?.toUrl(), name: tableArray[indexPath.row].description, description: "", average: String(array.average))
         } else {

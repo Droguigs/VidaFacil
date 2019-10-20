@@ -15,7 +15,14 @@ class LoginViewController: BaseViewController {
     
     
     override func viewDidLoad() {
-        
+        loginText.backgroundColor = .white
+        loginText.textColor = .black
+        loginText.attributedPlaceholder = NSAttributedString(string: "LOGIN",
+        attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        passwordText.backgroundColor = .white
+        passwordText.textColor = .black
+        passwordText.attributedPlaceholder = NSAttributedString(string: "SENHA",
+        attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
     }
     
     @IBAction func loginAsUser(_ sender: Any) {

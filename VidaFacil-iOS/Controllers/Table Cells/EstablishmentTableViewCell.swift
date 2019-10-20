@@ -28,8 +28,11 @@ class EstablishmentTableViewCell: UITableViewCell {
     func setup(name title: String, description: String, percentage: String) {
         establishmentImage.image = #imageLiteral(resourceName: "pig_icon")
         titleLabel.text = title
+        titleLabel.textColor = .black
         descriptionLabel.text = description
+        descriptionLabel.textColor = .black
         percentageLabel.text = percentage
+        percentageLabel.textColor = .white
     }
 
 }

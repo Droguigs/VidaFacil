@@ -16,6 +16,7 @@ class DetailsViewController: BaseViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var streetLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var gradeLabel: UILabel!
     
     var establishment: Establishment?
     var establishments: [Product] = []
@@ -33,6 +34,11 @@ class DetailsViewController: BaseViewController {
         self.titleLabel.text = establishment?.description ?? "Estabelecimento"
         self.streetLabel.text = establishment?.address ?? ""
         self.phoneLabel.text = establishment?.phone ?? ""
+        if let grade = establishment?.average?.average {
+            self.gradeLabel.text = "\(grade)"
+        } else {
+            self.gradeLabel.text = "-"
+        }
         ServicesManager.sharedInstance.api.establishments(establishmentId: establishment?.id ?? 0) { (result, error) in
             if let _error = error {
                 self.showError(_error)
@@ -43,6 +49,14 @@ class DetailsViewController: BaseViewController {
         }
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.titleLabel.textColor = .black
+        self.streetLabel.textColor = .black
+        self.phoneLabel.textColor = .black
+        self.gradeLabel.textColor = .black
+        self.tableView.backgroundColor = .white
+    }
+    
 }
 
 extension DetailsViewController: UITableViewDelegate, UITableViewDataSource {

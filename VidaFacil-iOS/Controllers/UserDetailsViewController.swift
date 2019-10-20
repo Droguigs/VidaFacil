@@ -10,6 +10,8 @@ import UIKit
 
 class UserDetailsViewController: UIViewController {
 
+    @IBOutlet weak var 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
